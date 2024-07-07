@@ -27,6 +27,8 @@ class ClientTest(unittest.TestCase):
      self.assertEqual(getRatio(10,5),2)
   def test_zero_price_b(self):
      self.assertIsNone(getRatio(2,0))
+  def test_zero_price_a(self):
+     self.assertEqual(getRatio(0,2),0)
      
 
 
